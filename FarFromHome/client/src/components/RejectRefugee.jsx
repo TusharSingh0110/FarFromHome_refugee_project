@@ -31,6 +31,7 @@ function RejectRefugee({ contract }) {
           />
         </label>
         <br />
+        <br />
         <button type="submit">Reject</button>
       </form>
     </div>

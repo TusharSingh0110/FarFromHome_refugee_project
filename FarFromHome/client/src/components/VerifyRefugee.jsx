@@ -33,6 +33,7 @@ function VerifyRefugee({ contract }) {
           />
         </label>
         <br />
+        <br />
         <button type="submit">Verify</button>
       </form>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
+import "./RegisterAsRefugee.css";
 
 function RegisterAsRefugee({ contract }) {
   const [name, setName] = useState("");
@@ -80,6 +81,7 @@ function RegisterAsRefugee({ contract }) {
             onChange={(e) => setUnhrcID(e.target.value)}
           />
         </label>
+        <br />
         <br />
         <button type="submit">Register</button>
       </form>

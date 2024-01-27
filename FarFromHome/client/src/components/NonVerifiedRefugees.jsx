@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import "./refugees.css";
 
 function NonVerifiedRefugees({ contract }) {
   const [nonVerifiedRefugees, setNonVerifiedRefugees] = useState([]);
@@ -18,18 +19,33 @@ function NonVerifiedRefugees({ contract }) {
   }, [contract]);
 
   return (
-    <div>
+    <div className="refugees-container">
       <h2>Non-Verified Refugees</h2>
-      <ul>
-        {nonVerifiedRefugees.map((refugee, index) => (
-          <li key={index}>
-            <strong>Name:</strong> {refugee.name}, <strong>Address:</strong>{" "}
-            {refugee.currentAddress}, <strong>UNHRC ID:</strong>{" "}
-            {refugee.unhrcID.toString()}, <strong>Account Address:</strong>{" "}
-            {refugee.accountAddress}
-          </li>
-        ))}
-      </ul>
+      {nonVerifiedRefugees.length > 0 && (
+        <table className="refugees-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>UNHRC ID</th>
+              <th>Account Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            {nonVerifiedRefugees.map((refugee, index) => (
+              <tr key={index}>
+                <td>{refugee.name}</td>
+                <td>{refugee.currentAddress}</td>
+                <td>{refugee.unhrcID.toString()}</td>
+                <td>{refugee.accountAddress}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {nonVerifiedRefugees.length === 0 && (
+        <p className="no-data">No non-verified refugees found.</p>
+      )}
     </div>
   );
 }
