@@ -1,4 +1,4 @@
-# Project README
+# Project README 👋
 ## Getting Started
 Follow these instructions to set up and run the project locally.
 
@@ -6,7 +6,7 @@ Follow these instructions to set up and run the project locally.
 Make sure you have Node.js and npm installed on your machine.
 
 ## Installation
-### Install Hardhat in the project directory:
+### Install Hardhat in the project directory:👷
 
 
 `npm install hardhat`
@@ -30,7 +30,7 @@ This section describes how to interact with the deployed smart contract.
 
 The contract address and ABI are used to interact with our smart contract.
 
-### Install React.js from Vite:
+### Install React.js from Vite: 
 
 
 `npm install vite@latest`
@@ -42,4 +42,4 @@ Different components are created for reading and writing functions of the fronte
 Run the application through:
 
 `npm run dev`
-This command starts the development server and allows you to view the application in your browser.
+This command starts the development server and allows you to view the application in your browser.🎉🎉
