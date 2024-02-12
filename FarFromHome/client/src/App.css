@@ -9,13 +9,15 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ff9966, #ff5e62);
+  /* background: linear-gradient(to right, #ff9966, #ff5e62);
+  width: 100%; */
+  background-image: url("assets/Designer.png");
 }
 
 .App {
   text-align: center;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 header {
@@ -30,7 +32,8 @@ header {
 }
 
 h1 {
-  color: #ff5e62;
+  color: black;
+  font-family: "Great Vibes", cursive;
 }
 
 .homepage-content {
@@ -43,7 +46,8 @@ h1 {
 }
 
 .homepage-content h3 {
-  color: #ff5e62;
+  color: #5e938b;
+  font-size: 30px;
 }
 
 .homepage-content ul {
@@ -62,8 +66,64 @@ h1 {
 
 .homepage-content p {
   line-height: 1.6;
+  font-size: 14px;
+}
+.actualBalance {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+.actualBalance > * {
+  margin-bottom: 20px;
+}
+
+.actualBalance > *:last-child {
+  margin-bottom: 0;
+}
+.govAccount {
+  max-width: 1000px;
+  /* margin: auto; */
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.govAccount > * {
+  margin-bottom: 10px;
+}
+.govAccount > *:last-child {
+  margin-bottom: 0;
+}
+.govAccount button {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.govAccount button:hover {
+  background-color: #45a049;
+}
+
+.govAccount .component {
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.govAccount .component h3 {
+  margin-top: 0;
+}
 @media (max-width: 600px) {
   .homepage-content {
     padding: 10px;

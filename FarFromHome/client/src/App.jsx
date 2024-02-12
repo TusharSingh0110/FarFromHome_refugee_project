@@ -109,27 +109,33 @@ function App() {
           <br />
         </>
       )}
+
       {state.contract && isGovernment && (
         <>
-          <VerifyRefugee contract={state.contract} />
-          <br />
-          <RejectRefugee contract={state.contract} />
-          <br />
+          <div className="govAccount">
+            <VerifyRefugee contract={state.contract} />
+            <br />
+            <RejectRefugee contract={state.contract} />
+            <br />
+          </div>
           <NonVerifiedRefugees contract={state.contract} />
           <br />
           <VerifiedRefugees contract={state.contract} />
           <br />
         </>
       )}
-      {state.contract && (
-        <>
-          <br />
-          <ActualBalance contract={state.contract} />
-          <br />
-          <ContractBalance contract={state.contract} />
-          <br />
-        </>
-      )}
+
+      <div className="actualBalance">
+        {state.contract && (
+          <>
+            <br />
+            <ActualBalance contract={state.contract} />
+            <br />
+            <ContractBalance contract={state.contract} />
+            <br />
+          </>
+        )}
+      </div>
     </div>
   );
 }
