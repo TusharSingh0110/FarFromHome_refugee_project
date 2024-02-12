@@ -16,15 +16,15 @@
 }
 
 .refugees-table th {
-  background-color: rgb(255, 217, 193);
-  border: 1px solid #ff5e62;
+  background-color: #96a66f;
+  border: 1px solid #2d3d04;
   color: #333;
   text-align: left;
   padding: 10px;
 }
 
 .refugees-table td {
-  border: 1px solid #ff5e62;
+  border: 1px solid #2d3d04;
   padding: 8px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .refugees-table tr:hover {
-  background-color: #ff9966;
+  background-color: #e1ecc4;
 }
 
 .no-data {
